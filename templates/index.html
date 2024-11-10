@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChatWithYourData_Bot</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h1>ChatBot Using LLM</h1>
+        <p>Interact with your PDF documents using our chatbot!</p>
+      </header>
+
+      <!-- File Upload Section -->
+      <section id="upload-section">
+        <h2>Upload PDF Document</h2>
+        <label for="file-input">Choose a file:</label>
+        <input type="file" id="file-input" accept=".pdf" />
+        <button onclick="uploadFile()">Load Document</button>
+      </section>
+
+      <!-- Chat Section -->
+      <section id="chat-section">
+        <h2>Chat</h2>
+        <div id="input-container">
+          <input
+            type="text"
+            id="user-message"
+            placeholder="Type your message..."
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+        <div id="chat-history"></div>
+      </section>
+
+      <!-- Controls Section -->
+      <section id="controls-section">
+        <button onclick="clearHistory()">Clear Chat History</button>
+      </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
