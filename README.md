@@ -34,7 +34,7 @@ This is a Flask-based web application that lets users upload PDF documents and i
 
 1. **Clone the repository:**
    
-   git clone https://github.com/yourusername/conversational-chatbot.git
+   git clone https://github.com/yourusername/chatbot_llm.git
    cd conversational-chatbot
   
 
@@ -102,4 +102,4 @@ This is a Flask-based web application that lets users upload PDF documents and i
 
 ---
 
-This README covers the core details of the chatbot project, including setup, usage, and additional information on the endpoints and structure.
+Google Slide presentation - https://docs.google.com/presentation/d/17pPNLWRLVp60M4ArB9zgWT0AKcAhISLGLz3Q8arxb1E/edit?usp=sharing
